@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style type="text/tailwindcss"></style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!--This link is different to the brief's link, but I'm using v4 features, and I think @theme needs v4, so I'm using the latest link.-->
@@ -26,11 +25,11 @@
     </style>
 </head>
 
-<body class="bg-paper">
+<body class="bg-newspaper">
     <div>
         <header>
-            <a href="index.html">Student_Portfolio_V1</a>
             <nav>
+                <a href="index.html">Student_Portfolio_V1</a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -38,7 +37,7 @@
                 </ul>
 
                 <div>
-                    <button aria-label="Search">
+                    <button type="button" aria-label="Search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
                     </button>
                     <a href="#">Download_CV</a>
@@ -47,18 +46,158 @@
         </header>
 
 <main>
-    <!-- page content -->
+    <section>
+        <p>Selected Works 2023-24</p>
+
+        <div>
+            <h1>Architectural<br>Integrity &amp;<br>Spatial Logic.</h1>
+
+            <div>
+                <p>A focused investigation into modular structures and technical precision within high-density urban environments. Designed for clarity, authority, and high-performance utility.</p>
+
+                <div>
+                    <a href="projects.html">Explore<br>Portfolio</a>
+                    <a href="#">Our<br>Philosophy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <dl>
+            <div>
+                <dt>Projects Completed</dt>
+                <dd>42+</dd>
+            </div>
+            <div>
+                <dt>Global Awards</dt>
+                <dd>12</dd>
+            </div>
+            <div>
+                <dt>Technical Certs</dt>
+                <dd>08</dd>
+            </div>
+            <div>
+                <dt>Design Labs</dt>
+                <dd>03</dd>
+            </div>
+        </dl>
+    </section>
+    <section>
+        <!-- Tall card on the left, this is an article.-->
+        <article>
+            <img src="images/monolith.jpg" alt="Tall monochromatic image of a glass paned structure with a line of black dots reflected in the panels below with two silhouettes walking across">
+            <div>
+                <p>Project 001</p>
+                <h2>The Monolith Pavilion</h2>
+                <p>Exploration of concrete as a fluid yet structural element in public transit hubs.</p>
+                <a href="projects.html">
+                    View case study
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+        </article>
+    <!-- Column of cards on the right -->
+        <div>
+            <div>
+                <p>Methodology</p>
+                <h2>BIM Integration &amp; Structural Analytics</h2>
+                <p>Every project follows a rigid grid system of 8px increments, ensuring mathematical perfection from initial concept to the final blueprint.</p>
+                <ul>
+                    <li>CAD</li>
+                    <li>3D Mapping</li>
+                    <li>Sustainability</li>
+                </ul>
+            </div>
+            <!-- Box containing two cards-->
+            <div>
+                <a href="projects.html">
+                    <p>Lab Archive</p>
+                    <h2>Shadow Studies</h2>
+                    <img src="images/shadow studies.jpg" alt="Close-up of three figures with shaved heads bowing together">
+                </a>
+
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-drafting-compass preview-icon"><path d="m12.99 6.74 1.93 3.44"/><path d="M19.136 12a10 10 0 0 1-14.271 0"/><path d="m21 21-2.16-3.84"/><path d="m3 21 8.02-14.26"/><circle cx="12" cy="5" r="2"/></svg>
+                    <h2>Join the Architectural Dialogue.</h2>
+                    <a href="contact.html">Submit Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div>
+                <p>Index</p>
+                <h2>Current Projects</h2>
+            </div>
+            <div>
+                <p>Sort by</p>
+                <button type="button">Year: 2024</button>
+            </div>
+        </div>
+
+        <ol>
+            <li>
+                <a href="projects.html">
+                    001
+                    <h3>Vortex Housing Complex</h3>
+                    <p>Stockholm, SE</p>
+                    <ul>
+                        <li>Urban</li>
+                        <li>Residential</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    002
+                    <h3>The Linear Observatory</h3>
+                    <p>Atacama, CL</p>
+                    <ul>
+                        <li>Science</li>
+                        <li>Minimalist</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    003
+                    <h3>Brutalist Atrium</h3>
+                    <p>Berlin, DE</p>
+                    <ul>
+                        <li>Public</li>
+                        <li>Interior</li>
+                    </ul>
+                </a>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h2>Stay updated on the latest structural investigations.</h2>
+
+        <form action="#">
+            <label for="newsletter-email">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Email address" required>
+                <button type="button" aria-label="Subscribe">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                </button>
+        </form>
+
+        <ul>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </section>
 </main>
 
 <footer>
     <p>&copy; 2024 ARCHITECTURAL PORTFOLIO. ALL RIGHTS RESERVED.</p>
     <ul>
-        <li><a href="">INSTAGRAM</a></li>
-        <li><a href="">LINKEDIN</a></li>
-        <li><a href="">GITHUB</a></li>
+        <li><a href="#">INSTAGRAM</a></li>
+        <li><a href="#">LINKEDIN</a></li>
+        <li><a href="#">GITHUB</a></li>
     </ul>
 </footer>
     </div>
 </body>
-</html>
 </html>
