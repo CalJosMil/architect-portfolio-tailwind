@@ -21,6 +21,9 @@
             --font-sans: "Inter", sans-serif;
             --color-newspaper: #f9f9f9;
             --color-charcoal: #5e5e5e;
+            --color-mist: #f3f3f3;
+            --color-concrete: #e2e2e2;
+            --color-smoke: #eeeeee;
         }
     </style>
 </head>
@@ -29,172 +32,175 @@
     <div class="max-w-7xl mx-auto">
         <!-- Navigation bar, shared across all three pages. Where differences existed I defaulted to index. -->
         <header>
-            <nav class="flex flex-wrap items-center justify-between px-8 py-6 border-b-2 border-black uppercase">
+            <nav class="flex flex-wrap items-center justify-between pl-8 pr-9 py-4 md:py-0 md:h-[66px] border-b-2 border-black uppercase">
                 <a href="index.html" class="w-full md:w-auto text-lg font-black">Student_Portfolio_V1</a>
-                <ul class="flex gap-9 text-sm text-neutral-500">
-                    <li><a class="hover:text-black hover:underline underline-offset-7 transition-colors" href="index.html">Home</a></li>
+                <ul class="flex items-center gap-8 text-[13px] tracking-wide text-neutral-500">
+                    <li><a class="block pb-1 border-b-2 border-black text-black font-medium" href="index.html">Home</a></li>
                     <li><a class="hover:text-black hover:underline underline-offset-7 transition-colors" href="projects.html">Projects</a></li>
                     <li><a class="hover:text-black hover:underline underline-offset-7 transition-colors" href="contact.html">Contact</a></li>
                 </ul>
 
-                <div class="flex gap-5 items-center">
+                <div class="flex gap-7 items-center">
                     <button class="cursor-pointer" type="button" aria-label="Search">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon size-5"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
                     </button>
-                    <a href="#" class="p-3 bg-black text-white text-xs font-bold hover:bg-transparent hover:text-black transition-colors">Download_CV</a>
+                    <a href="#" class="px-[22px] py-1.5 bg-black text-white border border-black text-[11px] leading-4 font-bold tracking-[0.15em] hover:bg-transparent hover:text-black transition-colors">Download_CV</a>
                 </div>
             </nav>
         </header>
 
         <main>
-            <section class="px-8 py-20">
-                <p class="mb-6 text-sm uppercase tracking-widest">Selected Works 2023-24</p>
+            <section class="px-8 pt-24 pb-16">
+                <p class="mb-6 text-base uppercase tracking-[0.2em] text-charcoal">Selected Works 2023—24</p>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                    <h1 class="lg:col-span-2 text-5xl lg:text-7xl font-black uppercase leading-none tracking-tight">Architectural<br>Integrity &amp;<br>Spatial Logic.</h1>
+                    <h1 class="lg:col-span-2 text-5xl lg:text-[80px] font-black uppercase leading-[0.9] tracking-tighter">Architectural<br>Integrity &amp;<br>Spatial Logic.</h1>
 
-                    <div class="flex flex-col gap-6">
-                        <p class="border-l-2 border-black pl-4 text-sm leading-relaxed">A focused investigation into modular structures and technical precision within high-density urban environments. Designed for clarity, authority, and high-performance utility.</p>
-                        <div class="grid grid-cols-2 gap-2">
-                            <a class="py-3 bg-black text-white text-center text-xs font-bold uppercase tracking-widest hover:bg-neutral-200 hover:text-black transition-colors duration-300" href="projects.html">Explore<br>Portfolio</a>
-                            <a class="py-3 bg-neutral-200 text-center text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-300" href="#">Our<br>Philosophy</a>
+                    <div class="flex flex-col gap-8 lg:mt-1.5">
+                        <p class="max-w-xs border-l-2 border-black pl-6 text-base leading-6 text-charcoal">A focused investigation into modular structures and technical precision within high-density urban environments. Designed for clarity, authority, and high-performance utility.</p>
+                        <div class="flex gap-4">
+                            <a class="w-48 py-4 bg-black text-white text-center text-[11px] leading-4 font-bold uppercase tracking-[0.15em] hover:bg-neutral-200 hover:text-black transition-colors duration-300" href="projects.html">Explore<br>Portfolio</a>
+                            <a class="flex-1 py-4 bg-neutral-200 border-b-2 border-neutral-300 text-center text-[11px] leading-4 font-bold uppercase tracking-[0.15em] hover:bg-black hover:text-white transition-colors duration-300" href="#">Our<br>Philosophy</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--Without pl-0 the first one looks wrong but in small screen view the third one looks wrong without it and in large screen view it looks wrong with it.-->
-            <section class="bg-neutral-100 border-y border-neutral-300 mb-6">
-                <dl class="grid grid-cols-2 md:grid-cols-4 md:divide-x divide-neutral-300 px-8 py-6">
-                    <div class="px-6 pl-0">
-                        <dt class="text-xs uppercase text-neutral-600">Projects Completed</dt>
-                        <dd class="mt-1 text-3xl font-black italic">42+</dd>
-                    </div>
-                    <div class="px-6">
-                        <dt class="text-xs uppercase text-neutral-600">Global Awards</dt>
-                        <dd class="mt-1 text-3xl font-black italic">12</dd>
-                    </div>
-                    <div class="px-6 md:pl-0 lg:pl-6">
-                        <dt class="text-xs uppercase text-neutral-600">Technical Certs</dt>
-                        <dd class="mt-1 text-3xl font-black italic">08</dd>
-                    </div>
-                    <div class="px-6">
-                        <dt class="text-xs uppercase text-neutral-600">Design Labs</dt>
-                        <dd class="mt-1 text-3xl font-black italic">03</dd>
-                    </div>
-                </dl>
+            <!-- Dividers are their own divs so they sit in the middle of the gaps. They are hidden on phones. -->
+            <section class="bg-mist border-t border-b-2 border-t-neutral-200 border-b-neutral-300">
+                <div class="grid grid-cols-2 gap-6 px-8 py-10 md:flex md:items-center md:justify-between">
+                    <dl>
+                        <dt class="text-base uppercase text-neutral-600">Projects Completed</dt>
+                        <dd class="mt-1 text-4xl font-black italic">42+</dd>
+                    </dl>
+                    <div class="hidden md:block w-px h-12 bg-neutral-300"></div>
+                    <dl>
+                        <dt class="text-base uppercase text-neutral-600">Global Awards</dt>
+                        <dd class="mt-1 text-4xl font-black italic">12</dd>
+                    </dl>
+                    <div class="hidden md:block w-px h-12 bg-neutral-300"></div>
+                    <dl>
+                        <dt class="text-base uppercase text-neutral-600">Technical Certs</dt>
+                        <dd class="mt-1 text-4xl font-black italic">08</dd>
+                    </dl>
+                    <div class="hidden md:block w-px h-12 bg-neutral-300"></div>
+                    <dl>
+                        <dt class="text-base uppercase text-neutral-600">Design Labs</dt>
+                        <dd class="mt-1 text-4xl font-black italic">03</dd>
+                    </dl>
+                </div>
             </section>
-            <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-8 pb-20">
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 pt-8 pb-8">
                 <!-- Tall card on the left, this is an article.-->
                 <article class="group grid overflow-hidden">
                     <img class="col-start-1 row-start-1 h-full min-h-100 lg:min-h-200 w-full object-cover grayscale group-hover:scale-105 transition-transform duration-500" src="images/monolith.jpg" alt="Tall monochromatic image of a glass paned structure with a line of black dots reflected in the panels below with two silhouettes walking across">
-                    <div class="z-10 col-start-1 row-start-1 self-end p-8 text-white bg-linear-to-t from-black/80 to-transparent">
-                        <p class="text-xs uppercase tracking-widest">Project 001</p>
-                        <h2 class="mt-2 text-3xl font-black uppercase tracking-tight">The Monolith Pavilion</h2>
-                        <p class="mt-2 max-w-sm text-sm">Exploration of concrete as a fluid yet structural element in public transit hubs.</p>
-                        <a class="group/link mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest" href="projects.html">
+                    <div class="z-10 col-start-1 row-start-1 self-end p-10 text-white bg-linear-to-t from-black/80 to-transparent">
+                        <p class="text-sm uppercase tracking-[0.2em]">Project 001</p>
+                        <h2 class="mt-2 text-4xl font-black uppercase tracking-tighter">The Monolith Pavilion</h2>
+                        <p class="mt-4 max-w-sm text-sm text-neutral-300">Exploration of concrete as a fluid yet structural element in public transit hubs.</p>
+                        <a class="group/link mt-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.15em]" href="projects.html">
                             View case study
-                            <svg class="lucide lucide-arrow-right preview-icon size-4 group-hover/link:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                            <svg class="lucide lucide-arrow-right preview-icon size-6 group-hover/link:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
                     </div>
                 </article>
             <!-- Column of cards on the right -->
-                <div class="grid grid-rows-2 gap-4">
-                    <div class="flex flex-col p-8 bg-neutral-200">
-                        <p class="text-xs uppercase tracking-widest">Methodology</p>
-                        <h2 class="mt-4 text-xl font-black uppercase tracking-tight">BIM Integration &amp; Structural Analytics</h2>
-                        <p class="mt-3 max-w-md text-xs text-charcoal">Every project follows a rigid grid system of 8px increments, ensuring mathematical perfection from initial concept to the final blueprint.</p>
-                        <ul class="mt-auto grid grid-cols-3 gap-3 pt-6 border-t border-neutral-300 text-xs uppercase">
-                            <li class="pb-1 border-b-4 border-black">CAD</li>
-                            <li class="pb-1 border-b-4 border-black">3D Mapping</li>
-                            <li class="pb-1 border-b-4 border-neutral-300">Sustainability</li>
+                <div class="grid grid-rows-2 gap-8">
+                    <div class="flex flex-col p-10 bg-concrete border-b-2 border-neutral-400">
+                        <p class="text-[15px] uppercase tracking-[0.15em] text-neutral-600">Methodology</p>
+                        <h2 class="mt-4 text-2xl font-black uppercase tracking-tighter">BIM Integration &amp; Structural Analytics</h2>
+                        <p class="mt-4 max-w-[440px] text-sm text-neutral-500">Every project follows a rigid grid system of 8px increments, ensuring mathematical perfection from initial concept to the final blueprint.</p>
+                        <ul class="mt-auto grid grid-cols-3 gap-4 pt-6 border-t border-neutral-300 text-[15px] uppercase text-charcoal">
+                            <li class="pb-1.5 border-b-4 border-black">CAD</li>
+                            <li class="pb-1.5 border-b-4 border-black">3D Mapping</li>
+                            <li class="pb-1.5 border-b-4 border-neutral-300">Sustainability</li>
                         </ul>
                     </div>
                     <!-- Box containing two cards-->
-                    <div class="grid grid-cols-2 gap-4">
-                        <a class="flex flex-col p-6 bg-neutral-100 hover:bg-neutral-200 transition-colors" href="projects.html">
-                            <p class="text-xs uppercase tracking-widest">Lab Archive</p>
-                            <h2 class="mt-2 text-sm font-bold uppercase">Shadow Studies</h2>
-                            <img class="-mr-6 -mb-6 mt-auto self-end w-1/2 aspect-square object-cover grayscale" src="images/shadow-studies.jpg" alt="Close-up of three figures with shaved heads bowing together">
+                    <div class="grid grid-cols-2 gap-8">
+                        <a class="flex flex-col p-8 bg-mist border-r-2 border-neutral-400 hover:bg-neutral-200 transition-colors duration-300" href="projects.html">
+                            <p class="text-[15px] uppercase tracking-[0.15em] text-neutral-600">Lab Archive</p>
+                            <h2 class="mt-2 text-xl font-bold uppercase tracking-tight">Shadow Studies</h2>
+                            <img class="-mr-8 -mb-8 mt-auto self-end size-[150px] object-cover grayscale" src="images/shadow-studies.jpg" alt="Close-up of three figures with shaved heads bowing together">
                         </a>
 
-                        <div class="flex flex-col justify-center gap-4 p-6 bg-black text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6 lucide lucide-drafting-compass preview-icon"><path d="m12.99 6.74 1.93 3.44"/><path d="M19.136 12a10 10 0 0 1-14.271 0"/><path d="m21 21-2.16-3.84"/><path d="m3 21 8.02-14.26"/><circle cx="12" cy="5" r="2"/></svg>
-                            <h2 class="text-sm font-black uppercase tracking-wider">Join the Architectural Dialogue.</h2>
-                            <a class="self-start px-3 py-1.5 border border-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors" href="contact.html">Submit Inquiry</a>
+                        <div class="flex flex-col justify-center gap-4 p-8 bg-black text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-[34px] lucide lucide-drafting-compass preview-icon"><path d="m12.99 6.74 1.93 3.44"/><path d="M19.136 12a10 10 0 0 1-14.271 0"/><path d="m21 21-2.16-3.84"/><path d="m3 21 8.02-14.26"/><circle cx="12" cy="5" r="2"/></svg>
+                            <h2 class="text-lg leading-tight font-bold uppercase tracking-widest">Join the Architectural Dialogue.</h2>
+                            <a class="self-start px-[18px] py-2 border border-white text-[10px] leading-4 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors" href="contact.html">Submit Inquiry</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="px-8 pb-20">
-                <div class="flex items-end justify-between pb-4 border-b-2 border-black">
+            <section class="px-8 py-24 bg-white">
+                <div class="flex items-end justify-between pb-8 border-b-2 border-black">
                     <div>
-                        <p class="text-xs uppercase tracking-widest">Index</p>
-                        <h2 class="text-4xl font-black uppercase tracking-tight">Current Projects</h2>
+                        <p class="text-base uppercase tracking-[0.2em] text-neutral-600">Index</p>
+                        <h2 class="mt-2 text-5xl font-black uppercase tracking-tighter">Current Projects</h2>
                     </div>
                     <div class="text-right">
-                        <p class="text-xs uppercase tracking-widest">Sort by</p>
-                        <button type="button" class="cursor-pointer text-xs font-bold uppercase underline underline-offset-4 hover:text-neutral-500 transition-colors duration-300">Year: 2024</button>
+                        <p class="text-base uppercase tracking-[0.2em] text-neutral-600">Sort by</p>
+                        <button type="button" class="mt-2.5 pb-0.5 cursor-pointer text-sm font-bold uppercase tracking-widest underline underline-offset-2 decoration-2 hover:text-neutral-500 transition-colors duration-300">Year: 2024</button>
                     </div>
                 </div>
 
-                <ol class="mt-6 divide-y divide-neutral-300">
+                <ol class="mt-16 divide-y divide-neutral-200">
                     <li>
-                        <a href="projects.html" class="grid grid-cols-12 items-center gap-4 px-4 py-6 hover:bg-neutral-100 transition-colors duration-300">
-                            <span class="col-span-1 text-sm">001</span>
-                            <h3 class="col-span-4 text-lg font-black uppercase tracking-tight">Vortex Housing Complex</h3>
-                            <p class="col-span-2 text-xs uppercase text-charcoal">Stockholm, SE</p>
+                        <a href="projects.html" class="grid grid-cols-12 items-center px-8 py-8 hover:bg-neutral-100 transition-colors duration-300">
+                            <span class="col-span-1 text-base font-medium">001</span>
+                            <h3 class="col-span-4 text-2xl font-black uppercase tracking-tighter">Vortex Housing Complex</h3>
+                            <p class="col-span-2 text-base uppercase text-neutral-600">Stockholm, SE</p>
                             <ul class="col-span-5 flex gap-2">
-                                <li class="px-2 py-1 bg-neutral-200 text-xs font-bold uppercase">Urban</li>
-                                <li class="px-2 py-1 bg-neutral-200 text-xs font-bold uppercase">Residential</li>
+                                <li class="px-3 py-1.5 bg-smoke text-[9px] leading-[11px] font-bold uppercase tracking-[0.05em]">Urban</li>
+                                <li class="px-3 py-1.5 bg-smoke text-[9px] leading-[11px] font-bold uppercase tracking-[0.05em]">Residential</li>
                             </ul>
                         </a>
                     </li>
                     <li>
-                        <a href="projects.html" class="grid grid-cols-12 items-center gap-4 px-4 py-6 hover:bg-neutral-100 transition-colors duration-300">
-                            <span class="col-span-1 text-sm">002</span>
-                            <h3 class="col-span-4 text-lg font-black uppercase tracking-tight">The Linear Observatory</h3>
-                            <p class="col-span-2 text-xs uppercase text-charcoal">Atacama, CL</p>
+                        <a href="projects.html" class="grid grid-cols-12 items-center px-8 py-8 hover:bg-neutral-100 transition-colors duration-300">
+                            <span class="col-span-1 text-base font-medium">002</span>
+                            <h3 class="col-span-4 text-2xl font-black uppercase tracking-tighter">The Linear Observatory</h3>
+                            <p class="col-span-2 text-base uppercase text-neutral-600">Atacama, CL</p>
                             <ul class="col-span-5 flex gap-2">
-                                <li class="px-2 py-1 bg-neutral-200 text-xs font-bold uppercase">Science</li>
-                                <li class="px-2 py-1 bg-neutral-200 text-xs font-bold uppercase">Minimalist</li>
+                                <li class="px-3 py-1.5 bg-smoke text-[9px] leading-[11px] font-bold uppercase tracking-[0.05em]">Science</li>
+                                <li class="px-3 py-1.5 bg-smoke text-[9px] leading-[11px] font-bold uppercase tracking-[0.05em]">Minimalist</li>
                             </ul>
                         </a>
                     </li>
                     <li>
-                        <a href="projects.html" class="grid grid-cols-12 items-center gap-4 px-4 py-6 hover:bg-neutral-100 transition-colors duration-300">
-                            <span class="col-span-1 text-sm">003</span>
-                            <h3 class="col-span-4 text-lg font-black uppercase tracking-tight">Brutalist Atrium</h3>
-                            <p class="col-span-2 text-xs uppercase text-charcoal">Berlin, DE</p>
+                        <a href="projects.html" class="grid grid-cols-12 items-center px-8 py-8 hover:bg-neutral-100 transition-colors duration-300">
+                            <span class="col-span-1 text-base font-medium">003</span>
+                            <h3 class="col-span-4 text-2xl font-black uppercase tracking-tighter">Brutalist Atrium</h3>
+                            <p class="col-span-2 text-base uppercase text-neutral-600">Berlin, DE</p>
                             <ul class="col-span-5 flex gap-2">
-                                <li class="px-2 py-1 bg-neutral-200 text-xs font-bold uppercase">Public</li>
-                                <li class="px-2 py-1 bg-neutral-200 text-xs font-bold uppercase">Interior</li>
+                                <li class="px-3 py-1.5 bg-smoke text-[9px] leading-[11px] font-bold uppercase tracking-[0.05em]">Public</li>
+                                <li class="px-3 py-1.5 bg-smoke text-[9px] leading-[11px] font-bold uppercase tracking-[0.05em]">Interior</li>
                             </ul>
                         </a>
                     </li>
                 </ol>
             </section>
 
-            <section class="px-8 py-24 bg-black text-white text-center">
-                <h2 class="max-w-3xl mx-auto text-4xl font-black uppercase tracking-tight">Stay updated on the latest structural investigations.</h2>
+            <section class="px-8 py-32 bg-black text-white text-center">
+                <h2 class="max-w-4xl mx-auto text-4xl lg:text-6xl leading-tight font-black uppercase tracking-tighter">Stay updated on the latest structural investigations.</h2>
 
-                <form action="#" class="max-w-md mx-auto mt-10 flex items-center border-b border-white focus-within:border-neutral-400 transition-colors duration-300">
+                <form action="#" class="max-w-xl mx-auto mt-10 flex items-center border-b-2 border-neutral-300 focus-within:border-white transition-colors duration-300">
                     <label for="newsletter-email" class="sr-only">Email address</label>
-                    <input type="email" id="newsletter-email" name="email" placeholder="Email address" required class="flex-1 py-3 bg-transparent text-sm uppercase placeholder:text-neutral-600 outline-none">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Email address" required class="flex-1 py-4 pl-3 bg-transparent text-base font-bold uppercase tracking-widest placeholder:text-neutral-800 outline-none">
                     <button type="submit" aria-label="Subscribe" class="cursor-pointer hover:translate-x-1 transition-transform duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon size-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon size-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </button>
                 </form>
 
-                <ul class="mt-10 flex justify-center gap-10 text-xs uppercase tracking-widest">
-                    <li><a href="#" class="hover:text-neutral-400 transition-colors duration-300">Journal</a></li>
-                    <li><a href="#" class="hover:text-neutral-400 transition-colors duration-300">Notes</a></li>
-                    <li><a href="#" class="hover:text-neutral-400 transition-colors duration-300">Twitter</a></li>
+                <ul class="mt-12 flex justify-center gap-8 md:gap-12 text-base uppercase tracking-[0.3em] text-neutral-300">
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Journal</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Notes</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Twitter</a></li>
                 </ul>
             </section>
         </main>
         <!-- Footer, shared across all three pages. Where differences exist I default to index. -->
-        <footer class="flex items-center justify-between px-8 py-6 bg-neutral-200 text-xs uppercase">
+        <footer class="flex items-center justify-between px-8 py-6 bg-smoke text-[11px] uppercase">
             <p class="font-bold">&copy; 2024 Architectural Portfolio. All rights reserved.</p>
-            <ul class="flex gap-6 text-neutral-500">
+            <ul class="flex gap-10 text-[10px] tracking-[0.05em] text-neutral-500">
                 <li><a href="#" class="hover:text-black transition-colors duration-300">Instagram</a></li>
                 <li><a href="#" class="hover:text-black transition-colors duration-300">LinkedIn</a></li>
                 <li><a href="#" class="hover:text-black transition-colors duration-300">GitHub</a></li>
